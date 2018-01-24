@@ -187,35 +187,40 @@ Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-pa
 ```
 COPY zcta_distances
 FROM 's3://looker-datablocks/acs_fast_facts/zcta_distances/' 
-CREDENTIALS 'aws_access_key_id=<aws_access_key_id>;aws_secret_access_key=<aws_secret_access_key>'  -- replace with access key and secret key from step 1
+ACCESS_KEY_ID '<aws_access_key_id>' -- replace with access key fromt step 1
+SECRET_ACCESS_KEY '<aws_secret_access_key>' -- replace with secret key from step 1
 REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
 
 COPY zcta_to_tract_w_state
 FROM 's3://looker-datablocks/acs_fast_facts/zcta_to_tract_w_state/' 
-CREDENTIALS 'aws_access_key_id=<aws_access_key_id>;aws_secret_access_key=<aws_secret_access_key>'  -- replace with access key and secret key from step 1
+ACCESS_KEY_ID '<aws_access_key_id>' -- replace with access key fromt step 1
+SECRET_ACCESS_KEY '<aws_secret_access_key>' -- replace with secret key from step 1
 REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
 
 COPY fast_facts
 FROM 's3://looker-datablocks/acs_fast_facts/fast_facts/' 
-CREDENTIALS 'aws_access_key_id=<aws_access_key_id>;aws_secret_access_key=<aws_secret_access_key>'  -- replace with access key and secret key from step 1
+ACCESS_KEY_ID '<aws_access_key_id>' -- replace with access key fromt step 1
+SECRET_ACCESS_KEY '<aws_secret_access_key>' -- replace with secret key from step 1
 REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
 
 COPY geo2015
 FROM 's3://looker-datablocks/acs_fast_facts/geo_2015/' 
-CREDENTIALS 'aws_access_key_id=<aws_access_key_id>;aws_secret_access_key=<aws_secret_access_key>'  -- replace with access key and secret key from step 1
+ACCESS_KEY_ID '<aws_access_key_id>' -- replace with access key fromt step 1
+SECRET_ACCESS_KEY '<aws_secret_access_key>' -- replace with secret key from step 1
 REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
 
 COPY block_group_attribs
 FROM 's3://looker-datablocks/acs_fast_facts/block_group_attribs/' 
-CREDENTIALS 'aws_access_key_id=<aws_access_key_id>;aws_secret_access_key=<aws_secret_access_key>'  -- replace with access key and secret key from step 1
+ACCESS_KEY_ID '<aws_access_key_id>' -- replace with access key fromt step 1
+SECRET_ACCESS_KEY '<aws_secret_access_key>' -- replace with secret key from step 1
 REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
